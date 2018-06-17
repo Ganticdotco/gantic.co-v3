@@ -119,6 +119,8 @@ article .view a {
   box-shadow: 0 0.1rem 0.5rem 0 rgba(0,0,0,0.05);
   transition: all .1s ease-in;
   border-bottom: none;
+  font-size: 0.85rem;
+
 }
 
 article .view a:hover {
@@ -138,10 +140,19 @@ article .read{
 article .read a {
   text-transform: uppercase;
   letter-spacing: 0.025rem;
+  font-size: 0.85rem;
 }
 
 .reversed h1, .reversed h2, .reversed h3, .reversed h1 a, .reversed h2 a, .reversed h3 a, .reversed p, .reversed a {
   color: white;
+}
+
+.reversed p {
+  text-shadow: 0.05rem 0.05rem 0.2rem rgba(0, 0, 0, 0.32);
+}
+
+.reversed h1, .reversed h2, .reversed h3 {
+  text-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.32);
 }
 
 /* Hero */
@@ -360,13 +371,20 @@ article:first-of-type {
 
 .contact-details-item {
   display: inline-block;
-  margin: .2rem 1rem 1rem 0;
+  /* margin: .2rem 1rem 1rem 0; */
   border-bottom: none;
+}
+
+.contact-details-item {
+  margin-right: 1rem;
+  margin-left: 1rem;
+
 }
 
 .contact-details-items-main {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .contact-details-item-socials {
@@ -928,7 +946,7 @@ footer {
 
   .contact {
     grid-template-columns: 1fr 10fr 1fr;
-    grid-template-rows: 8rem 20rem 4rem 8rem;
+    grid-template-rows: 1fr auto auto auto 1fr;
     grid-template-areas:
       "l-margin header r-margin"
       "l-margin form r-margin"
@@ -1035,7 +1053,7 @@ footer {
   }
 
   .contact > h1 {
-    /* margin: 0; */
+    margin: 0;
     grid-area: header;
   }
 
@@ -1075,6 +1093,23 @@ footer {
 
     .work article {
       grid-column: 3 / span 8;
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    .work .project-details {
+      grid-column: 2 / span 3;
+    }
+
+    .work .showcase {
+      grid-column: 6 / span 3;
+    }
+
+    .work .flipped .project-details {
+      grid-column: 5 / span 3;
+    }
+
+    .work .flipped .showcase {
+      grid-column: 1 / span 3;
     }
 
     .work .pin {
@@ -1092,11 +1127,52 @@ footer {
     .work .whilo {
       grid-column: 4 / span 8;
     }
-
-
   }
 
-  /* ~1600px */
+  /* ~1312 */
+  @media screen and (min-width: 82em){
+    section, .hero, .contact {
+      padding-left: calc((100vw - 64rem) / 2 );
+      padding-right: calc((100vw - 64rem) / 2 );
+    }
+    /* .work article {
+      grid-column: 3 / span 7;
+      grid-template-columns: repeat(7, 1fr);
+    }
+
+    .work .project-details {
+      grid-column: 2 / span 3;
+    }
+
+    .work .showcase {
+      grid-column: 6 / span 2;
+    }
+
+    .work .flipped .project-details {
+      grid-column: 4 / span 3;
+    }
+
+    .work .flipped .showcase {
+      grid-column: 1 / span 2;
+    }
+
+    .work .pin {
+      grid-column: 3 / span 7;
+    }
+
+    .work .product-of {
+      grid-column: 5 / span 7;
+    }
+
+    .work .travello {
+      grid-column: 2 / span 7;
+    }
+
+    .work .whilo {
+      grid-column: 4 / span 7;
+    } */
+  }
+
   @media screen and (min-width: 100em){
     html {
       font-size: 150%;
