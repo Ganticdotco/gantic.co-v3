@@ -100,6 +100,10 @@ article header p span.secondary:before {
   clear: both;
 }
 
+article p {
+  max-width: 32em;
+}
+
 .reversed h1, .reversed h2, .reversed h3, .reversed h1 a, .reversed h2 a, .reversed h3 a, .reversed p, .reversed a {
   color: white;
 }
@@ -144,6 +148,7 @@ article header p span.secondary:before {
   font-size: 2.5rem;
   text-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.2);
   color: #8bdacc;
+  margin-bottom: 1rem;
 }
 
 .hero-content p {
@@ -200,10 +205,24 @@ article:first-of-type {
   right: 0;
   margin: -1.5rem -1rem -1rem -1rem;
   padding: .5rem 1rem 1rem 1rem;
+}
+
+.hero {
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  right: 0;
 
   display: grid;
-  grid-template-rows: 25% 50% 25%;
+  grid-template-rows: 1fr auto 1fr;
   grid-gap: 1rem;
+}
+
+.contact {
+  min-height: 67.667vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /* # SECTION: HERO # */
@@ -751,4 +770,167 @@ footer {
   background-color: #005e5f;
 
   color: white;
+}
+
+
+/*##########################################################
+############################################################
+############                                    ############
+############                                    ############
+############           MEDIA QUERIES            ############
+############                                    ############
+############                                    ############
+############################################################
+##########################################################*/
+
+/* ~576px */
+@media screen and (min-width: 36rem){
+  .hero{
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .hero-content {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .banner {
+    grid-column: 1/3;
+  }
+
+  .work, .words {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+  }
+
+  .work article, .words article {
+    grid-column: 1/4;
+    margin:0;
+  }
+
+  .words .more {
+    grid-column: 1/4;
+    margin-top: 3rem;
+  }
+
+}
+
+/* ~768px */
+@media screen and (min-width: 48em){
+  section > h1 {
+    visibility: hidden;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .hero-content {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+    text-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+    max-width: 24em;
+    line-height: 1.75;
+    text-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.32);
+  }
+
+  .banner {
+    grid-column: 1/3;
+  }
+
+  .work, .words {
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+
+  .work {
+    row-gap: 4rem;
+  }
+
+  .about, .contact {
+    display: grid;
+    grid-gap: 1rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .contact {
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 8rem 20rem 4rem 8rem;
+    grid-template-areas:
+      "l-margin header r-margin"
+      "l-margin form r-margin"
+      "l-margin contacts r-margin"
+      "l-margin socials r-margin"
+  }
+
+  .work article, .work > h1,
+  .words article, .words > h1,
+  .words .more,
+  .about article, .about > h1,
+  .contact > div, .contact > h1 {
+    grid-column: 2;
+  }
+
+  .contact > h1 {
+    /* margin: 0; */
+    grid-area: header;
+  }
+
+  .contactFormContainer {
+    grid-area: form;
+  }
+
+  .contact-details-items-main {
+    grid-area: contacts;
+  }
+
+  .contact-details-item-socials {
+    grid-area: socials;
+  }
+
+  .contactFormContainer, .projectFormContainer, .contact-details-items-main, .contact-details-item-socials {
+    margin-bottom: 0;
+  }
+
+  /* ~896px */
+  @media screen and (min-width: 56em){
+    html {
+      font-size: 125%;
+    }
+  }
+
+  /* ~1024px */
+  @media screen and (min-width: 64em){
+    .hero {
+      grid-template-rows: 1fr auto 1fr;
+      grid-gap: 1rem;
+    }
+
+    .hero, .work, .words, .about, .contact {
+      grid-template-columns: 2fr 8fr 2fr;
+    }
+  }
+
+  /* ~1600px */
+  @media screen and (min-width: 100em){
+    html {
+      font-size: 150%;
+    }
+  }
+
 }
