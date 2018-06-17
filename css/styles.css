@@ -151,7 +151,7 @@ article .read a {
   text-shadow: 0.05rem 0.05rem 0.2rem rgba(0, 0, 0, 0.32);
 }
 
-.reversed h1, .reversed h2, .reversed h3 {
+.reversed h1, .reversed h2, .reversed h3, .reversed li a {
   text-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.32);
 }
 
@@ -213,16 +213,64 @@ article .read a {
 
 /* Navigation */
 
-.main-nav {
-  display: none;
+.banner {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 8rem auto;
+  grid-gap: 1rem;
+  align-items: baseline;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 1.5rem 1rem 1rem;
+  background-color: white;
+  box-shadow: .5rem .5rem 2rem rgba(60, 68, 66, .25), .125rem .125rem .5rem rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  transition: all .4s linear;
+}
+
+.banner.transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.logo, .main-nav, .main-nav ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto;
+  grid-gap: 1.5rem;
+}
+
+.main-nav li:nth-child(1) {
+  grid-column: 2;
+}
+
+.main-nav li:nth-child(2) {
+  grid-column: 3;
+}
+
+.main-nav li:nth-child(3) {
+  grid-column: 4;
+}
+
+.main-nav li:nth-child(4) {
+  grid-column: 5;
 }
 
 .main-nav li {
   list-style: none;
+  display: inline-block;
   font-family: "N", san-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .main-nav li a {
@@ -277,6 +325,10 @@ article:first-of-type {
 .hero, .contact {
   background-image: linear-gradient(60deg, #006A80 0%, #00806A 100%);
   color: white;
+}
+
+.hero-content {
+  grid-row: 2;
 }
 
 /* # SECTION: WORK # */
@@ -852,7 +904,6 @@ footer {
   }
 
   .hero-content {
-    grid-row: 2;
     grid-column: 2;
   }
 
