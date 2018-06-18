@@ -17,12 +17,15 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
   - [x] Homepage responsive styling
   - [ ] Project page basic styling
   - [ ] Project page responsive styling
+  - [ ] Add scroll indicator
 
 ### Interactivity & extras
   - [x] Menu interactivity
   - [x] Form reception
   - [ ] Post-submission form experience
   - [ ] Custom 404 page
+  - [ ] Add dropdown menu direct links to projects & articles
+  - [ ] Check all sharing meta tags, images and SEO keywords etc
 
 ### Page performance
   - [ ] Follow Google page speed performance improvements
@@ -35,3 +38,4 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
   - [ ] Check all current subdomains redirect
   - [ ] Check all current redirects work
   - [ ] Add Google Analytics
+  - [ ]
