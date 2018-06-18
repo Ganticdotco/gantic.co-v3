@@ -1,14 +1,23 @@
 // ########################################################
 // Show and hide the page banner depending on page position
 function runOnScroll() {
-   var banner = document.querySelector('#banner');
-   if (window.scrollY >= 300) {
-     banner.classList.remove('transparent');
-     banner.classList.remove('reversed');
-   } else {
-     banner.classList.add('transparent');
-     banner.classList.add('reversed');
-   }
+  var banner = document.querySelector('#banner');
+  var pageName =  document.querySelector('html');
+  if (pageName.classList.contains('home')) {
+    if (window.scrollY >= 300) {
+      banner.classList.remove('transparent');
+      banner.classList.remove('reversed');
+    } else {
+      banner.classList.add('transparent');
+      banner.classList.add('reversed');
+    };
+  } else {
+    if (window.scrollY >= 60) {
+      banner.classList.remove('transparent');
+    } else {
+      banner.classList.add('transparent');
+    };
+  };
 };
 window.addEventListener("scroll", runOnScroll);
 
