@@ -6,18 +6,20 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
 
 ## To-dos
 ### Structure & content:
-	- [x] Homepage structure HTML
-  - [x] Homepage content HTML
-  - [x] Project pages structure HTML
-  - [ ] Project pages content HTML
+	- [x] Homepage structure
+  - [x] Homepage content
+  - [x] Project pages structure
+  - [x] Project pages initial content
+  - [ ] Project in-depth content added
   - [ ] HTML accessibility checks
 
 ### Styling & responsiveness
   - [x] Homepage basic styling
   - [x] Homepage responsive styling
-  - [ ] Project page basic styling
-  - [ ] Project page responsive styling
-  - [ ] Add scroll indicator
+  - [x] Project page basic styling
+  - [x] Project page responsive styling
+  - [ ] Add scroll indicators
+  - [ ] Final polish
 
 ### Interactivity & extras
   - [x] Menu interactivity
@@ -26,16 +28,16 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
   - [ ] Custom 404 page
   - [ ] Add dropdown menu direct links to projects & articles
   - [ ] Check all sharing meta tags, images and SEO keywords etc
+  - [ ] Add 'down' and 'visited' states for links
 
 ### Page performance
   - [ ] Follow Google page speed performance improvements
   - [ ] Compress image assets
   - [ ] Implement responsive images
-  - [ ] Break out critical CSS
+  - [ ] ~~Break out critical CSS for preload~~ Failed.
 
 ### Implementation
-  - [ ] Redirect domain DNS
+  - [x] Redirect domain DNS
   - [ ] Check all current subdomains redirect
   - [ ] Check all current redirects work
   - [ ] Add Google Analytics
-  - [ ]
