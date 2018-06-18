@@ -435,7 +435,7 @@ article:first-of-type {
   margin: 4rem 0 2rem;
 }
 
-/* # SECTION: WORK # */
+/* # SECTION: WORK & PROJECTS # */
 
 .work article, .project .hero-content {
   background-size: cover;
@@ -477,6 +477,23 @@ article:first-of-type {
 
 .showcase {
   display: none;
+}
+
+.project-content {
+  position: relative;
+}
+
+.feature-img {
+  position: relative;
+  display: block;
+  max-width: 80%;
+  margin: 3rem auto;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(60, 68, 66, .25), 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+
 }
 
 /* # SECTION: ABOUT # */
@@ -1184,6 +1201,10 @@ footer {
     margin: 0;
   }
 
+  .feature-img {
+    grid-column: 4 / span 7;
+    margin: 2rem 0;
+  }
 }
 
 /* ~768px */
@@ -1407,6 +1428,13 @@ footer {
 
     .project-content p {
       grid-column: 2 / span 6;
+    }
+
+    .feature-img {
+      grid-column: 9 / span 3;
+      margin: -16rem 0 1rem 0;
+      width: 100%;
+      max-width: unset;
     }
   }
 
