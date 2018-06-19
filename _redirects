@@ -3,3 +3,15 @@ https://jai.gantic.co/* https://www.gantic.co/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://gantic.netlify.com/* https://www.gantic.co/:splat 301!
+
+# Redirect to project shortnames
+/pin /project/pin
+/productof /project/productof
+/travello /project/travello
+/whilo /project/whilo
+
+# Redirect homepage sections as anchor tags
+/work /index.html#work
+/words /index.html#words
+/about /index.html#about
+/contact /index.html#contact
