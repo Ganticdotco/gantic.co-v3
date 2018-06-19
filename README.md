@@ -28,6 +28,7 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
 ### Interactivity & extras
   - [x] Menu interactivity
   - [x] Form reception
+  - [x] Auto-scroll internal links (*not working in Safari*)
   - [ ] Post-submission form confirmation
   - [ ] Custom 404 page
   - [ ] Add dropdown menu direct links to projects & articles
@@ -40,9 +41,10 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
   - [ ] Compress & optimise image assets
   - [ ] Implement responsive images
   - [ ] ~~Break out critical CSS for preload~~ Failed.
+  - [ ] Cross browser/platform testing
 
 ### Implementation
   - [x] Redirect domain DNS
   - [ ] Check all current subdomains redirect
   - [x] Check all current redirects work
-  - [ ] Add Google Analytics
+  - [x] Add Google Analytics
