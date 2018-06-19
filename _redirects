@@ -1,5 +1,5 @@
 # Redirect domain aliases to primary domain
-https://jai.gantic.co/* https://gantic.co/:splat 301!
+https://jai.gantic.co/* https://www.gantic.co/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-https://gantic.netlify.com/* https://gantic.co/:splat 301!
+https://gantic.netlify.com/* https://www.gantic.co/:splat 301!
