@@ -19,7 +19,7 @@
     </image:image>
     <video:video>
       <video:thumbnail_loc>https://www.gantic.co/img/Pin-Video.png</video:thumbnail_loc>
-      <video:title>Pin • Product Design by Jai Mitchell</video:title>
+      <video:title>Project: Pin • Product Design by Jai Mitchell</video:title>
       <video:description>I worked with World Champion Golfer Adam Scott&#039;s team to re-think golf scoring and statistics</video:description>
       <video:content_loc>https://www.gantic.co/img/img/Pin-Video.mp4</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
@@ -97,7 +97,7 @@
     <loc>https://www.gantic.co/project/whilo/</loc>
     <lastmod>2018-06-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.2/priority></priority>
+    <priority>0.2</priority>
     <image:image>
       <image:loc>https://www.gantic.co/img/Whilo-Profile.png</image:loc>
       <image:title>Whilo • Product Design by Jai Mitchell</image:title>
