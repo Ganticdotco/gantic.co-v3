@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://www.gantic.co/</loc>
+    <lastmod>2018-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Jai-Photo.jpg</image:loc>
+      <image:title>Gantic.co • Jai Mitchell, Product Designer</image:title>
+      <image:caption>Jai Mitchell wants to build great products with great teams, solve real problems for real people, and, hopefully improve someone&#039;s day, one interaction at a time.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Pin-Video.png</image:loc>
+      <image:title>Pin • Product Design by Jai Mitchell</image:title>
+      <image:caption>I worked with World Champion Golfer Adam Scott&#039;s team to re-think golf scoring and statistics.</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.gantic.co/img/Pin-Video.png</video:thumbnail_loc>
+      <video:title>Pin • Product Design by Jai Mitchell</video:title>
+      <video:description>I worked with World Champion Golfer Adam Scott&#039;s team to re-think golf scoring and statistics</video:description>
+      <video:content_loc>https://www.gantic.co/img/img/Pin-Video.mp4</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Product-Breaky-AandC.jpg</image:loc>
+      <image:title>Product Of BNE • Design community started by Jai Mitchell • Weekly breakfast</image:title>
+      <image:caption>Weekly breakfast social events for product designers</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Product-Event-Prototyping.jpeg</image:loc>
+      <image:title>Product Of BNE • Design community started by Jai Mitchell • Workshop events</image:title>
+      <image:caption>Industry events and workshops to help the Brisbane product design community to share knowledge and grow together.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Travello-Explore.png</image:loc>
+      <image:title>Travello • Product Design by Jai Mitchell</image:title>
+      <image:caption>Jai delivered a complete redesign of a travel networking app for a local fast growing Travel startup.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Whilo-Profile.png</image:loc>
+      <image:title>Whilo • Product Design by Jai Mitchell</image:title>
+      <image:caption>Jai worked on an app that aims to simplify gift purchasing, and minimising wastage of unwanted gifts.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.gantic.co/project/pin/</loc>
+    <lastmod>2018-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://www.gantic.co/img/Pin-Video.png</video:thumbnail_loc>
+      <video:title>Pin • Product Design by Jai Mitchell</video:title>
+      <video:description>I worked with World Champion Golfer Adam Scott&#039;s team to re-think golf scoring and statistics.</video:description>
+      <video:content_loc>https://www.gantic.co/img/img/Pin-Video.mp4</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Pin-Video.png</image:loc>
+      <image:title>Pin • Product Design by Jai Mitchell</image:title>
+      <image:caption>Jai worked with World Champion Golfer Adam Scott&#039;s team to re-think golf scoring and statistics.</image:caption>
+    </image:image>
+
+  </url>
+  <url>
+    <loc>https://www.gantic.co/project/product-of/</loc>
+    <lastmod>2018-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Product-Breaky-AandC.jpg</image:loc>
+      <image:title>Product Of BNE • Design community started by Jai Mitchell • Weekly breakfast</image:title>
+      <image:caption>Weekly breakfast social events for product designers</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Product-Event-Prototyping.jpeg</image:loc>
+      <image:title>Product Of BNE • Design community started by Jai Mitchell • Workshop events</image:title>
+      <image:caption>Industry events and workshops to help the Brisbane product design community to share knowledge and grow together.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.gantic.co/project/travello/</loc>
+    <lastmod>2018-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Travello-Explore.png</image:loc>
+      <image:title>Travello • Product Design by Jai Mitchell</image:title>
+      <image:caption>Jai delivered a complete redesign of a travel networking app for a local fast growing Travel startup.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.gantic.co/project/whilo/</loc>
+    <lastmod>2018-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2/priority>
+    <image:image>
+      <image:loc>https://www.gantic.co/img/Whilo-Profile.png</image:loc>
+      <image:title>Whilo • Product Design by Jai Mitchell</image:title>
+      <image:caption>Jai worked on an app that aims to simplify gift purchasing, and minimising wastage of unwanted gifts.</image:caption>
+    </image:image>
+  </url>
+</urlset>
