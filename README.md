@@ -10,10 +10,11 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
   - [x] Homepage content
   - [x] Project pages structure
   - [x] Project pages initial content
-  - [ ] Project in-depth content added
-  - [ ] HTML accessibility checks
+  - [ ] In-depth project content added
+  - [ ] Site accessibility audit
   - [ ] Customise forms on project pages
-  - [ ] Project quick navigation
+  - [ ] Quick navigation between projects
+  - [ ] Include resume (page w/ print style or PDF?)
 
 ### Styling & responsiveness
   - [x] Homepage basic styling
@@ -28,10 +29,11 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
 ### Interactivity & extras
   - [x] Menu interactivity
   - [x] Form reception
-  - [x] Auto-scroll internal links (*not working in Safari*)
+  - [x] Auto-scroll internal links (*only working in Chrome*)
+  - [ ] Current section indicator on home nav
   - [ ] Post-submission form confirmation
   - [ ] Custom 404 page
-  - [ ] Add dropdown menu direct links to projects & articles
+  - [ ] Dropdown direct nav links to projects & articles
   - [ ] Check all sharing meta tags, images and SEO keywords etc
   - [ ] Add 'down' and 'visited' states for links
   - [ ] Scroll to section on direct page link
