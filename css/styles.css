@@ -142,7 +142,7 @@ article .view a:hover, .project .hero-content .view a:hover {
 }
 
 
-article .read{
+article .read {
   margin-top: 1.2rem;
 }
 
@@ -493,8 +493,30 @@ article:first-of-type {
   box-shadow: 0.5rem 0.5rem 2rem rgba(60, 68, 66, .25), 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-
+.gallery {
+  margin-top: 3rem;
+  height: 133.3333vw;
 }
+
+.screenshot-gallery {
+  position: absolute;
+  left:0;
+  overflow-x: scroll;
+  width: 100vw;
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+.screenshot-gallery-container {
+  width: 400%;
+}
+
+.screenshot-gallery .screenshot {
+  width: 66.6667vw;
+  max-width: 300px;
+}
+
+/* Project: Pin */
 
 /* # SECTION: ABOUT # */
 
