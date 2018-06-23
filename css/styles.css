@@ -456,22 +456,22 @@ article:first-of-type {
 }
 
 .work article.pin, .project .hero-content.pin {
-  background-image: url(../img/Pin-BG.png);
+  background-image: url(../project/pin/img/Pin-BG.png);
   background-color: #3565bf;
 }
 
 .work article.product-of, .project .hero-content.product-of {
-  background-image: url(../img/ProductOf-BG.png);
+  background-image: url(../project/productof/img/ProductOf-BG.png);
   background-color: #efefef;
 }
 
 .work article.travello, .project .hero-content.travello {
-  background-image: url(../img/Travello-BG.png);
+  background-image: url(../project/travello/img/Travello-BG.png);
   background-color: #1a99d6;
 }
 
 .work article.whilo, .project .hero-content.whilo {
-  background-image: url(../img/Whilo-BG.png);
+  background-image: url(../project/whilo/img/Whilo-BG.png);
   background-color: #3b3e3b;
 }
 
