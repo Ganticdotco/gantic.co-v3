@@ -14,32 +14,13 @@ body {
   padding: 0;
   margin: 0;
   color: #282b2a;
-  background-color: white;
+  background-color: #005e5f;
   scroll-behavior: smooth;
 }
 
-.hero:before, footer:after {
-  content: " ";
-  position: fixed;
-  height: 8rem;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #005e5f;
-}
-
-.project .hero:before {
+section {
   background-color: white;
 }
-
-.hero:before {
-  top: -8rem;
-}
-
-footer:after {
-  bottom: -8rem;
-}
-
 
 body.nav-active {
   overflow: hidden;
@@ -634,7 +615,7 @@ section.work, section.words, section.about {
   background-color: white;
   box-shadow: .125rem .125rem .5rem rgba(0, 0, 0, 0.32);
   border: none;
-  z-index: 999999;
+  z-index: 99999999;
   transition: all .3s linear;
 
   opacity: 1;
@@ -717,10 +698,6 @@ section.work, section.words, section.about {
 }
 
 /* # SECTION: CONTACT # */
-
-.contact {
-  margin-top: 8rem;
-}
 
 .contact h1 {
   padding-top: 2rem;
@@ -1471,10 +1448,6 @@ footer {
 
   .about-content h1 {
     font-size: 4rem;
-  }
-
-  .contact {
-    margin-top: 4rem;
   }
 
   .contact {
