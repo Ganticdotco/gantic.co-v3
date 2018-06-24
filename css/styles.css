@@ -7,17 +7,7 @@
 html {
   font-size: 112.5%;
   -webkit-font-smoothing: antialiased;
-  background-color: #005e5f;
-}
-
-html.home {
-  background: rgb(0,94,95);
-  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 98%, rgba(0,94,95,1) 99%);
-}
-
-html.project {
-  background: rgb(0,94,95);
-  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%);
+  /* background-color: #005e5f; */
 }
 
 body {
@@ -28,15 +18,28 @@ body {
   scroll-behavior: smooth;
 }
 
-.home body {
-  background: rgb(0,94,95);
-  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 98%, rgba(0,94,95,1) 99%);
+body:before, body:after {
+  content: " ";
+  position: fixed;
+  height: 8rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #005e5f;
 }
 
-.project body {
-  background: rgb(0,94,95);
-  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%);
+.project body:before {
+  background-color: white;
 }
+
+body:before {
+  top: -8rem;
+}
+
+body:after {
+  bottom: -8rem;
+}
+
 
 body.nav-active {
   overflow: hidden;
