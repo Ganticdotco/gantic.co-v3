@@ -32,7 +32,7 @@ section {
   background-color: white;
 }
 
-body.nav-active {
+body.nav-active, body.lightbox-active {
   overflow: hidden;
 }
 
@@ -505,17 +505,19 @@ section.work, section.words, section.about {
   padding-top: 0;
 }
 
-.feature-img, .images-container .lightbox {
+.feature-img, .lightbox-container .lightbox {
   position: relative;
   display: block;
   max-width: 80%;
   margin: 3rem auto;
   border-radius: 0.25rem;
+  padding: 0;
+  border: none;
   overflow: hidden;
   box-shadow: 0.5rem 0.5rem 2rem rgba(60, 68, 66, .25), 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.images-container {
+.lightbox-container {
   position: relative;
   grid-column: 1 / -1;
 }
@@ -535,19 +537,17 @@ section.work, section.words, section.about {
   margin-top: -70%;
 }
 
-.lightbox.overlap-3:first-child {
+.lightbox.overlap-3:nth-of-type(2) {
   margin-top: 3rem;
   left: -25%;
 }
 
-.lightbox.overlap-3:last-child {
+.lightbox.overlap-3:last-of-type {
   right: -25%;
 }
 
-.lightbox:active, .lightbox:focus {
+.lightbox-active .lightbox {
   overflow: visible;
-  z-index: 99999;
-  cursor: default;
   box-shadow: none;
   outline: none;
 }
@@ -567,7 +567,7 @@ section.work, section.words, section.about {
   max-height: 100%;
 }
 
-.close-lightbox {
+#close-lightbox {
   position: fixed;
   width: 0rem;
   height: 0rem;
@@ -586,44 +586,38 @@ section.work, section.words, section.about {
     visibility .2s;
 }
 
-.lightbox.overlap-3:before {
+.lightbox-overlay {
   display: none;
   content: "";
   background-color: rgba(0, 0, 0, .5);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 9999;
   width: 100%;
   height: 100%;
 }
 
-.lightbox.overlap-3:active:before, .lightbox.overlap-3:focus:before {
+.lightbox-active .lightbox-overlay {
   display: block;
 }
 
-.lightbox:active img + img,
-.lightbox:focus img + img {
+.lightbox-active .lightbox.selected img + img {
   opacity: 1;
   visibility: visible;
   width: auto;
   height: auto;
   max-width: 80vw;
   max-height: 80vh;
+  z-index: 9999;
   transition:
     opacity .4s linear,
     max-width .4s ease-out,
     visibility .4s;
-  cursor: pointer;
+  cursor: default;
 }
 
-.lightbox:active img:first-child,
-.lightbox:focus img:first-child {
-  opacity: .5;
-}
-
-.lightbox:active .close-lightbox,
-.lightbox:focus .close-lightbox {
+.lightbox-active #close-lightbox {
   left: calc(100vw - 4rem);
   top: .75rem;
   height: 2.5rem;
@@ -1634,8 +1628,7 @@ footer {
   }
 
 
-  .lightbox:active img + img,
-  .lightbox:focus img + img {
+  .lightbox-active .lightbox.selected img + img {
     opacity: 1;
     visibility: visible;
     width: auto;
@@ -1646,7 +1639,6 @@ footer {
       opacity .4s linear,
       max-width .4s ease-out,
       visibility .4s;
-    cursor: pointer;
   }
 
 }
@@ -1738,7 +1730,7 @@ footer {
     padding-left: calc((100vw - 65rem) / 2 );
     padding-right: calc((100vw - 65rem) / 2 );
   }
-  .images-container {
+  .lightbox-container {
     margin: 0 auto;
   }
 
@@ -1747,11 +1739,11 @@ footer {
     display: inline-block;
   }
 
-  .lightbox.overlap-3:first-child {
+  .lightbox.overlap-3:nth-of-type(2) {
     left: auto;
   }
 
-  .lightbox.overlap-3:last-child {
+  .lightbox.overlap-3:last-of-type {
     right: auto;
   }
 
@@ -1761,9 +1753,8 @@ footer {
     left: 0;
   }
 
-  .lightbox:active img + img,
-  .lightbox:focus img + img {
-    left: -25%;
+  .lightbox-active .lightbox.selected img + img {
+    left: -16%;
   }
 
 }

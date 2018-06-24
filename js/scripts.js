@@ -1,4 +1,4 @@
-// ########################################################
+// #####################################
 // Show and hide the page banner depending on page position
 function runOnScroll() {
   var banner = document.querySelector('#banner');
@@ -21,6 +21,9 @@ function runOnScroll() {
 };
 window.addEventListener("scroll", runOnScroll);
 
+
+
+
 // #####################################
 // Show and hide the mobile overlay menu
 var menuToggle = document.querySelector('#menu-toggle');
@@ -39,6 +42,43 @@ for (var i = 0; i < menuItems.length; i++) {
     docBody.classList.remove('nav-active');
   });
 };
+
+
+// #####################################
+// Show and hide lightbox images
+var lightboxClose = document.querySelectorAll('#close-lightbox, .lightbox-overlay');
+var lightboxItems = document.querySelectorAll('.lightbox');
+
+// Show lightbox when image selected
+for (var i = 0; i < lightboxItems.length; i++) {
+  // console.log("lightboxItems[i]");
+  lightboxItems[i].addEventListener("click", function() {
+    docBody.classList.add('lightbox-active');
+    // console.log(this);
+    this.classList.add('selected');
+  });
+};
+
+// Hide lightbox when image, close button, or overlay selected
+for (var i = 0; i < lightboxClose.length; i++) {
+  // console.log("lightboxClose[i]");
+  lightboxClose[i].addEventListener("click", function() {
+    docBody.classList.remove('lightbox-active');
+    // console.log(this);
+    for (var i = 0; i < lightboxItems.length; i++) {
+      lightboxItems[i].classList.remove('selected');
+    };
+  });
+};
+
+// #####################################
+// Allow JS clickable items to be accessed via Keyboard
+// document.onkeydown = function(e) {
+//   if(e.keyCode == 13 || e.keyCode == 32) { // The Enter/Return key
+//     document.activeElement.click();
+//   }
+// };
+
 
 // #####################################
 // Scroll smoothly to internal links
