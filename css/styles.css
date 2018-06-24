@@ -7,7 +7,7 @@
 html {
   font-size: 112.5%;
   -webkit-font-smoothing: antialiased;
-  /* background-color: #005e5f; */
+  background-color: #005e5f;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
   scroll-behavior: smooth;
 }
 
-body:before, body:after {
+.hero:before, footer:after {
   content: " ";
   position: fixed;
   height: 8rem;
@@ -28,15 +28,15 @@ body:before, body:after {
   background-color: #005e5f;
 }
 
-.project body:before {
+.project .hero:before {
   background-color: white;
 }
 
-body:before {
+.hero:before {
   top: -8rem;
 }
 
-body:after {
+footer:after {
   bottom: -8rem;
 }
 
