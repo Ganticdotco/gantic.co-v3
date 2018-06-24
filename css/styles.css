@@ -650,7 +650,7 @@ section.work, section.words, section.about {
 }
 
 .gallery {
-  height: 133.3333vw;
+  height: 136vw;
 }
 
 .screenshot-gallery {
@@ -659,7 +659,7 @@ section.work, section.words, section.about {
   overflow-x: scroll;
   width: 100%;
   padding: 2rem;
-  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 
   -ms-overflow-style: none;  // IE 10+
   overflow: -moz-scrollbars-none;  // Firefox
