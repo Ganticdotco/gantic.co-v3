@@ -10,13 +10,32 @@ html {
   background-color: #005e5f;
 }
 
+html.home {
+  background: rgb(0,94,95);
+  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 98%, rgba(0,94,95,1) 99%);
+}
+
+html.project {
+  background: rgb(0,94,95);
+  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%);
+}
+
 body {
   padding: 0;
   margin: 0;
   color: #282b2a;
   background-color: white;
   scroll-behavior: smooth;
+}
 
+.home body {
+  background: rgb(0,94,95);
+  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 98%, rgba(0,94,95,1) 99%);
+}
+
+.project body {
+  background: rgb(0,94,95);
+  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%);
 }
 
 body.nav-active {
