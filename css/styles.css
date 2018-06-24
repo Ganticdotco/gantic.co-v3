@@ -8,6 +8,9 @@ html {
   font-size: 112.5%;
   -webkit-font-smoothing: antialiased;
   background-color: #005e5f;
+  font-family: "N", san-serif;
+  font-style: normal;
+  line-height: 1.5;
 }
 
 body {
@@ -505,16 +508,43 @@ section.work, section.words, section.about {
   padding-top: 0;
 }
 
+figure {
+  margin: 0;
+}
+
+.feature-fig {
+  position: relative;
+  max-width: 80%;
+}
+
 .feature-img, .lightbox-container .lightbox {
   position: relative;
   display: block;
-  max-width: 80%;
-  margin: 3rem auto;
+  margin: 3rem auto 2rem;
   border-radius: 0.25rem;
+  width: 100%;
   padding: 0;
   border: none;
   overflow: hidden;
   box-shadow: 0.5rem 0.5rem 2rem rgba(60, 68, 66, .25), 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+figure .feature-img {
+  margin:0;
+}
+
+figcaption {
+  font-family: "N", san-serif;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 0.75rem;
+  color: #777777;
+  margin-top: 1rem;
+}
+
+.gallery-caption {
+  padding-top: calc(119vw + 3rem);
 }
 
 .lightbox-container {
@@ -643,9 +673,9 @@ section.work, section.words, section.about {
   cursor: pointer;
 }
 
-.gallery {
+/* .gallery {
   height: 136vw;
-}
+} */
 
 .screenshot-gallery {
   position: absolute;
@@ -697,7 +727,7 @@ section.work, section.words, section.about {
   box-shadow: 0 .5rem 1.5rem 0 rgba(0,0,0,0.2);
 }
 
-.about .quote {
+.quote {
   border-left: solid .5rem #00BFBF;
   font-style: italic;
   padding-left: 1rem;
@@ -1388,7 +1418,7 @@ footer {
     max-width: 32rem;
   }
 
-  .feature-img {
+  .feature-fig {
     grid-column: 4 / span 7;
     margin: 2rem 0;
   }
@@ -1606,8 +1636,12 @@ footer {
     margin-bottom: 0;
   }
 
-  .gallery {
+  /* .gallery {
     height: 33rem;
+  } */
+
+  .gallery-caption {
+    padding-top: 32rem;
   }
 
   .screenshot-gallery-container {
@@ -1656,7 +1690,7 @@ footer {
     grid-column: 2 / span 6;
   }
 
-  .feature-img {
+  .feature-fig {
     grid-column: 9 / span 3;
     grid-row: 1 / 4;
     margin: -16rem 0 1rem 0;
@@ -1765,8 +1799,11 @@ footer {
   }
 
 
-  .gallery {
+  /* .gallery {
     height: 24rem;
+  } */
+  .gallery-caption {
+    padding-top: 0;
   }
 
   .screenshot-gallery {
