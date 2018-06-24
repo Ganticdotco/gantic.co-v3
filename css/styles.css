@@ -18,6 +18,16 @@ body {
   scroll-behavior: smooth;
 }
 
+html.project {
+  background: rgb(0,94,95);
+  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%), #005e5f;
+}
+
+.project body {
+  background: rgb(0,94,95);
+  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%), #005e5f;
+}
+
 section {
   background-color: white;
 }
@@ -438,7 +448,10 @@ section.work, section.words, section.about {
 
 .project .hero {
   margin: 0;
-  padding: 4rem 1rem 0;}
+  padding: 2.5rem 1rem 1rem;
+  position: relative;
+  z-index: 1;
+}
 
 /* # SECTION: WORK & PROJECTS # */
 
@@ -451,7 +464,7 @@ section.work, section.words, section.about {
   box-shadow: .5rem .5rem 2rem rgba(60, 68, 66, .25), .125rem .125rem .5rem rgba(0, 0, 0, 0.1);
   border-radius: .25rem;
   max-width: 100%;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 0;
   transition: all .2s ease-in-out;
 }
 
@@ -1190,6 +1203,10 @@ footer {
 
   .home .hero-content {
     grid-column: 2;
+  }
+
+  .project .hero {
+    padding-top: 4rem;
   }
 
   .banner {
