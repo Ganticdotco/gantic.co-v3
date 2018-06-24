@@ -3,6 +3,7 @@
     position:relative;
     -webkit-box-sizing:content-box !important;
     box-sizing:content-box !important;
+    z-index: 0;
 }
 
 .device-mock .screen {

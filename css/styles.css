@@ -448,9 +448,8 @@ section.work, section.words, section.about {
 
 .project .hero {
   margin: 0;
-  padding: 2.5rem 1rem 1rem;
+  padding: 2.5rem 1rem 2rem;
   position: relative;
-  z-index: 1;
 }
 
 /* # SECTION: WORK & PROJECTS # */
@@ -500,6 +499,10 @@ section.work, section.words, section.about {
 .project-content {
   position: relative;
   padding: 1rem;
+}
+
+.hero + .project-content {
+  padding-top: 0;
 }
 
 .feature-img, .images-container .lightbox {
@@ -590,6 +593,7 @@ section.work, section.words, section.about {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
 }
@@ -628,7 +632,7 @@ section.work, section.words, section.about {
   background-color: white;
   box-shadow: .125rem .125rem .5rem rgba(0, 0, 0, 0.32);
   border: none;
-  z-index: 99999999;
+  z-index: 999999;
   transition: all .3s linear;
 
   opacity: 1;
@@ -655,6 +659,7 @@ section.work, section.words, section.about {
   overflow-x: scroll;
   width: 100%;
   padding: 2rem;
+  scroll-behavior: smooth;
 
   -ms-overflow-style: none;  // IE 10+
   overflow: -moz-scrollbars-none;  // Firefox
@@ -1380,7 +1385,10 @@ footer {
     grid-auto-rows: auto;
   }
 
-  .project-content p {
+  .project-content p,
+  .project-content h1,
+  .project-content h2,
+  .project-content h3  {
     grid-column: 2 / span 10;
     margin: 0;
     max-width: 32rem;
@@ -1445,7 +1453,10 @@ footer {
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .project-content p {
+  .project-content p,
+  .project-content h1,
+  .project-content h2,
+  .project-content h3  {
     grid-column: 2 / span 10;
   }
 
@@ -1602,7 +1613,7 @@ footer {
   }
 
   .gallery {
-    height: 30rem;
+    height: 33rem;
   }
 
   .screenshot-gallery-container {
@@ -1646,7 +1657,10 @@ footer {
     font-size: 125%;
   }
 
-  .project-content p {
+  .project-content p,
+  .project-content h1,
+  .project-content h2,
+  .project-content h3 {
     grid-column: 2 / span 6;
   }
 
