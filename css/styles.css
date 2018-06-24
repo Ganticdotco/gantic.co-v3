@@ -570,7 +570,7 @@ section.work, section.words, section.about {
   max-height: 100%;
 }
 
-button.close-lightbox {
+.close-lightbox {
   position: fixed;
   width: 0rem;
   height: 0rem;
@@ -624,8 +624,8 @@ button.close-lightbox {
   opacity: .5;
 }
 
-.lightbox:active button.close-lightbox,
-.lightbox:focus button.close-lightbox {
+.lightbox:active .close-lightbox,
+.lightbox:focus .close-lightbox {
   left: calc(100vw - 4rem);
   top: .75rem;
   height: 2.5rem;
