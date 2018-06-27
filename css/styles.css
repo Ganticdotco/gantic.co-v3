@@ -129,11 +129,11 @@ article p, .project .hero-content p {
   max-width: 32em;
 }
 
-article .view, .project .hero-content .view {
+.view {
   margin-top: 1rem;
 }
 
-article .view a, .project .hero-content .view a {
+.view a {
   padding: 1rem 2rem;
   border-radius: 0.25rem;
   background-color: white;
@@ -150,7 +150,11 @@ article .view a, .project .hero-content .view a {
   margin-top: 1rem;
 }
 
-article .view a:hover, .project .hero-content .view a:hover {
+.view a:last-of-type {
+  margin-right: 0;
+}
+
+.view a:hover {
   box-shadow: 0 0.3333rem 1.5rem 0 rgba(0, 0, 0, 0.2);
   transition: all .4s ease-in-out;
   border-bottom: none;
@@ -170,6 +174,10 @@ article .read a {
 
 .reversed h1, .reversed h2, .reversed h3, .reversed h1 a, .reversed h2 a, .reversed h3 a, .reversed p, .reversed a {
   color: white;
+}
+
+.reversed .view a {
+  color: #008080;
 }
 
 .reversed p {
@@ -770,22 +778,14 @@ figcaption {
 }
 
 .invision-proto {
-  margin: 2rem auto;
-}
-
-.invision-proto.iphone8 {
   position: relative;
-  width: 80%;
-  padding-top: 169.8624%;
+  margin: 2rem auto;
+  text-align: center;
 }
 
-.invision-proto iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+.invision-proto iframe {
+  margin: 0 auto;
+  display: none;
 }
 
 /* # SECTION: ABOUT # */
@@ -1516,6 +1516,11 @@ footer {
   .wide-fig {
     grid-column: 2 / span 10;
   }
+
+  .invision-proto iframe {
+    display: block;
+  }
+
 }
 
 /* ~768px */
