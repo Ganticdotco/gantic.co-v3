@@ -50,3 +50,9 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
   - [ ] Check all current subdomains redirect
   - [x] Check all current redirects work
   - [x] Add Google Analytics
+
+
+### Low-level task-list
+ - [ ] Vertical spacing on large screens (Safari only?)
+ - [ ] Lightbox items showing behind overlay?
+ - [ ] 
