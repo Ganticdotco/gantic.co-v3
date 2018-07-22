@@ -242,7 +242,7 @@ body:not(.nav-active) .reversed .logo a:hover span {
   margin-bottom: 1rem;
 }
 
-.home .hero-content p {
+.home .hero-content p, .home .hero-content p a {
   font-family: "T";
   font-weight: 800;
   font-size: 1rem;
@@ -1561,7 +1561,7 @@ footer {
     text-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
   }
 
-  .home .hero-content p {
+  .home .hero-content p, .home .hero-content p a {
     font-size: 1.5rem;
     max-width: 24em;
     line-height: 1.75;
