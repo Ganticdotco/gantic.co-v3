@@ -55,4 +55,13 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
 ### Low-level task-list
  - [ ] Vertical spacing on large screens (Safari only?)
  - [ ] Lightbox items showing behind overlay?
- - [ ] 
+ - [ ] Link style in banner copy
+ - [ ] Mask initial CSS loading animation somehow
+ - [ ] Add some hierarchy to project tile typography
+ - [ ] Fix Product Of preview thumb spacing
+ - [ ] Add an animation to either Travello or Whilo preview
+ - [ ] Fix email and twitter contact hover states
+ - [ ] Fix email and twitter contact spacing on mobile
+ - [ ] Fix desktop lightbox selected viewed
+ - [ ] Add honeypot field to forms to reduce spam
+ - [ ] Reversed button styles
