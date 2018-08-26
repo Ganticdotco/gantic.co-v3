@@ -150,6 +150,11 @@ article p, .project .hero-content p {
   margin-top: 1rem;
 }
 
+.view.inversed a {
+  color: white;
+  background-color: #008080;
+}
+
 .view a:last-of-type {
   margin-right: 0;
 }
@@ -820,6 +825,10 @@ figcaption {
 
 .invision-proto iframe {
   margin: 0 auto;
+  display: none;
+}
+
+.invision-proto figcaption {
   display: none;
 }
 
@@ -1565,7 +1574,7 @@ footer {
     grid-column: 1 / -1;
   }
 
-  .invision-proto iframe {
+  .invision-proto iframe, .invision-proto figcaption {
     display: block;
   }
 
