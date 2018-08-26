@@ -211,21 +211,21 @@
   <section class="project-content">
     <div class="content-group accessRequest">
       <p>If you'd like to read the complete case study, request access here:</p>
-      <form name="request-form" method="post" id="request-form" class="requestForm" netlify-honeypot="bots-fill-this" netlify action="/project/pin/#request-form">
+      <form name="request-pin" method="post" id="request-pin" class="requestForm" netlify-honeypot="bots-fill-this" netlify action="/project/pin/#request-form">
         <fieldset class="request-name">
-          <input type="text" name="name" autocomplete="name" form="request-form" required />
+          <input type="text" name="name" autocomplete="name" form="request-pin" required />
           <label>Name</label>
         </fieldset>
         <fieldset class="request-email">
-          <input type="email" name="email" autocomplete="email" form="request-form" required />
+          <input type="email" name="email" autocomplete="email" form="request-pin" required />
           <label>Email</label>
         </fieldset>
         <fieldset class="honeypot-field">
-          <input name="bots-fill-this" />
+          <input name="bots-fill-this" form="request-pin" />
           <label>Humans leave blank</label>
         </fieldset>
-        <input type="hidden" name="url" form="request-form" value="pin">
-        <button class="send-request" type="submit" name="submit" form="request-form" value="Send Form">Request the Case Study</button>
+        <input type="hidden" name="url" form="request-pin" value="pin">
+        <button class="send-request" type="submit" name="submit" form="request-pin" value="Send Form">Send</button>
       </form>
     </div>
   </section>
@@ -292,25 +292,25 @@
   <section id="contact" class="contact reversed">
     <h1>Contact</h1>
     <div class="contactFormContainer contactSwitch">
-      <form name="contact-pin" method="post" id="contact-form" class="contactForm contact-direct form-ready" netlify action="/project/pin/#contact">
+      <form name="contact-pin" method="post" id="contact-pin" class="contactForm contact-direct form-ready" netlify action="/project/pin/#contact">
         <fieldset class="form-name">
-          <input type="text" name="name" autocomplete="name" form="contact-form" required></input>
+          <input type="text" name="name" autocomplete="name" form="contact-pin" required></input>
           <label>Name</label>
         </fieldset>
         <fieldset class="form-email">
-          <input type="email" name="email" autocomplete="email" form="contact-form" required></input>
+          <input type="email" name="email" autocomplete="email" form="contact-pin" required></input>
           <label>Email</label>
         </fieldset>
         <fieldset class="form-message">
-          <textarea type="text" name="message" form="contact-form" required></textarea>
+          <textarea type="text" name="message" form="contact-pin" required></textarea>
           <label>Message</label>
         </fieldset>
         <fieldset class="honeypot-field">
-          <input name="bots-fill-this" />
+          <input name="bots-fill-this" form="contact-pin"/>
           <label>Humans leave blank</label>
         </fieldset>
-        <input type="hidden" name="url" form="contact-form" value="pin">
-        <button class="send-message" type="submit" name="submit" form="contact-form" value="Send Form">Send</button>
+        <input type="hidden" name="url" form="contact-pin" value="pin">
+        <button class="send-message" type="submit" name="submit" form="contact-pin" value="Send Form">Send</button>
       </form>
     </div>
 

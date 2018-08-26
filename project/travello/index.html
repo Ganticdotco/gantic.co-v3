@@ -93,25 +93,25 @@
   <section id="contact" class="contact reversed">
     <h1>Contact</h1>
     <div class="contactFormContainer contactSwitch">
-      <form name="contact-travello" method="post" id="contact-form" class="contactForm contact-direct form-ready" netlify action="/project/travello/#contact">
+      <form name="contact-travello" method="post" id="contact-travello" class="contactForm contact-direct form-ready" netlify action="/project/travello/#contact">
         <fieldset class="form-name">
-          <input type="text" name="name" autocomplete="name" form="contact-form" required></input>
+          <input type="text" name="name" autocomplete="name" form="contact-travello" required></input>
           <label>Name</label>
         </fieldset>
         <fieldset class="form-email">
-          <input type="email" name="email" autocomplete="email" form="contact-form" required></input>
+          <input type="email" name="email" autocomplete="email" form="contact-travello" required></input>
           <label>Email</label>
         </fieldset>
         <fieldset class="form-message">
-          <textarea type="text" name="message" form="contact-form" required></textarea>
+          <textarea type="text" name="message" form="contact-travello" required></textarea>
           <label>Message</label>
         </fieldset>
         <fieldset class="honeypot-field">
-          <input name="bots-fill-this" />
+          <input name="bots-fill-this" form="contact-travello" />
           <label>Humans leave blank</label>
         </fieldset>
-        <input type="hidden" name="url" form="contact-form" value="travello">
-        <button class="send-message" type="submit" name="submit" form="contact-form" value="Send Form">Send</button>
+        <input type="hidden" name="url" form="contact-travello" value="travello">
+        <button class="send-message" type="submit" name="submit" form="contact-travello" value="Send Form">Send</button>
       </form>
     </div>
 
