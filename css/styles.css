@@ -538,6 +538,13 @@ section.work, section.words, section.about {
   grid-auto-rows: auto;
 }
 
+.project-roles.small-role {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: auto;
+}
+
 .project-roles h4, .project-roles h5, .project-roles li {
   font-size: 0.75rem;
 }
