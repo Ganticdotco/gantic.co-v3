@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="../../css/fonts.css">
 
   <meta name="description" content="I founded and organised a Meetup, which became an international network of local digital Product Design communities."/>
-  <link rel="canonical" href="https://jai.gantic.co/" />
   <meta property="og:locale" content="en_AU" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Product Of ___ • Jai Mitchell&#039;s Product Design Portfolio" />
@@ -51,7 +50,7 @@
           <li><a class="nav-link" href="../../#work">Work</a></li>
           <li><a class="nav-link" href="../../#words">Words</a></li>
           <li><a class="nav-link" href="../../#about">About</a></li>
-          <li><a class="nav-link" href="../../#contact">Contact</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -66,31 +65,55 @@
   </section>
 
   <section class="project-content">
-    <p class="overview">In 2016 I started Brisbane's first Meetup for Digital Product Designers. Now at nearly 1,000 members, we've run weekly social events, and a broad variety of workshops.</p>
-    <img class="feature-img" src="../../img/Product-Breaky-AandC.jpg" alt="Product of BNE Breakfast – at Alfred & Constance">
-    <img class="feature-img"  src="../../img/Product-Event-Prototyping.jpeg" alt="Product of BNE Event – Prototyping Panel">
-    <p>Together with local organisers, we've since launched sibling groups in Sydney and San Francisco, and are currently working to envision an international network of local design communities.</p>
-    <p>The power of forming a strong industry network has been a massively rewarding experience for me, for sharing knowledge, motivation, and opportunities.</p>
+    <div class="content-group">
+      <p class="overview">In 2016 I started Brisbane's first Meetup for Digital Product Designers. Now at nearly 1,000 members, we've run weekly social events, and a broad variety of workshops.</p>
+    </div>
+    <figure class="feature-fig">
+      <img class="feature-img" src="img/Product-Breaky-AandC.jpg" alt="Product of BNE Breakfast – at Alfred & Constance">
+      <img class="feature-img"  src="img/Product-Event-Prototyping.jpeg" alt="Product of BNE Event – Prototyping Panel">
+      <figcaption>Some of the 100+ weekly breakfast events we've held.</figcaption>
+    </figure>
+    <div class="content-group">
+      <p>Together with local organisers, we've since launched sibling groups in Sydney and San Francisco, and are currently working to envision an international network of local design communities.</p>
+      <p>The power of forming a strong industry network has been a massively rewarding experience for me, for sharing knowledge, motivation, and opportunities.</p>
+    </div>
   </section>
+
+  <section class="project-jumplinks">
+    <a class="pin link-1 reversed" href="../pin/index.html">
+      <h2>Pin</h2>
+    </a>
+    <a class="travello link-2 reversed" href="../travello/index.html">
+      <h2>Travello</h2>
+    </a>
+    <a class="whilo link-3 reversed" href="../whilo/index.html">
+      <h2>Whilo</h2>
+    </a>
+  </section>
+
 
   <section id="contact" class="contact reversed">
     <h1>Contact</h1>
     <div class="contactFormContainer contactSwitch">
-      <form method="post" name="contact-form" id="contact-form" class="contactForm contact-direct form-ready" netlify action="/project/productof/#contact">
+      <form method="post" name="contact-productof" id="contact-productof" class="contactForm contact-direct form-ready" netlify action="/project/productof/#contact">
         <fieldset class="form-name">
-          <input type="text" name="name" autocomplete="name" form="contact-form" required></input>
+          <input type="text" name="name" autocomplete="name" form="contact-productof" required></input>
           <label>Name</label>
         </fieldset>
         <fieldset class="form-email">
-          <input type="email" name="email" autocomplete="email" form="contact-form" required></input>
+          <input type="email" name="email" autocomplete="email" form="contact-productof" required></input>
           <label>Email</label>
         </fieldset>
         <fieldset class="form-message">
-          <textarea type="text" name="message" form="contact-form" required></textarea>
+          <textarea type="text" name="message" form="contact-productof" required></textarea>
           <label>Message</label>
         </fieldset>
-        <input type="hidden" name="url" form="contact-form" value="productof">
-        <button class="send-message" type="submit" name="submit" form="contact-form" value="Send Form">Send</button>
+        <fieldset class="honeypot-field">
+          <input name="bots-fill-this" form="contact-productof" />
+          <label>Humans leave blank</label>
+        </fieldset>
+        <input type="hidden" name="url" form="contact-productof" value="productof">
+        <button class="send-message" type="submit" name="submit" form="contact-productof" value="Send Form">Send</button>
       </form>
     </div>
 

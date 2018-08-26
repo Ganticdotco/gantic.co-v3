@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="../../css/fonts.css">
 
   <meta name="description" content="I worked on an app that aims to simplify gift purchasing, and minimising wastage of unwanted gifts."/>
-  <link rel="canonical" href="https://jai.gantic.co/" />
   <meta property="og:locale" content="en_AU" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Whilo • Jai Mitchell&#039;s Product Design Portfolio" />
@@ -51,7 +50,7 @@
           <li><a class="nav-link" href="../../#work">Work</a></li>
           <li><a class="nav-link" href="../../#words">Words</a></li>
           <li><a class="nav-link" href="../../#about">About</a></li>
-          <li><a class="nav-link" href="../../#contact">Contact</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -66,31 +65,54 @@
   </section>
 
   <section class="project-content">
-    <p class="overview">I led strategy & UX for an LA startup exploring the concept gift-registries for non-traditional occassions to simplify gifting and minimise wastage.</p>
-    <img class="feature-img" src="../../img/Whilo-Profile.png" alt="Whilo – Social wishlist - Profile">
-    <p>The Founders of 'Prezme LLC' came to us with a very specific problem they wanted to solve around purchasing gifts for their childrens' friends, without any insight into what a teenage or pre-teen girl wants, needs or cares about.</p>
-    <p>They wanted to find ways to use this social interaction as a way to better get to know their own children, to educate their children about wastage and charity, and hopefully to eliminate the wastefulness of unwanted gifts, once and for all.</p>
-    <p>We helped them to better identify and define the problem space, explore and validate solutions, and eventually to deliver the product as an iOS app which we designed, named, branded and worked with developers from Hydric Media to build.</p>
+    <div class="content-group">
+      <p class="overview">I led strategy & UX for an LA startup exploring the concept gift-registries for non-traditional occassions to simplify gifting and minimise wastage.</p>
+    </div>
+    <figure class="feature-fig">
+      <img class="feature-img" src="img/Whilo-Profile.png" alt="Whilo – Social wishlist - Profile">
+      <figcaption>A user profile from the app at launch.</figcaption>
+    </figure>
+    <div class="content-group">
+      <p>The Founders of 'Prezme LLC' came to us with a very specific problem they wanted to solve around purchasing gifts for their childrens' friends, without any insight into what a teenage or pre-teen girl wants, needs or cares about.</p>
+      <p>They wanted to find ways to use this social interaction as a way to better get to know their own children, to educate their children about wastage and charity, and hopefully to eliminate the wastefulness of unwanted gifts, once and for all.</p>
+      <p>We helped them to better identify and define the problem space, explore and validate solutions, and eventually to deliver the product as an iOS app which we designed, named, branded and worked with developers from Hydric Media to build.</p>
+    </div>
+  </section>
+
+  <section class="project-jumplinks">
+    <a class="pin link-1 reversed" href="../pin/index.html">
+      <h2>Pin</h2>
+    </a>
+    <a class="product-of link-2" href="../productof/index.html">
+      <h2>Product Of&nbsp;<span class="tight">___</span></h2>
+    </a>
+    <a class="travello link-3 reversed" href="../travello/index.html">
+      <h2>Travello</h2>
+    </a>
   </section>
 
   <section id="contact" class="contact reversed">
     <h1>Contact</h1>
     <div class="contactFormContainer contactSwitch">
-      <form name="contact-whilo" method="post" name="contact-form" id="contact-form" class="contactForm contact-direct form-ready" netlify action="/project/whilo/#contact">
+      <form name="contact-whilo" method="post" id="contact-whilo" class="contactForm contact-direct form-ready" netlify action="/project/whilo/#contact">
         <fieldset class="form-name">
-          <input type="text" name="name" autocomplete="name" form="contact-form" required></input>
+          <input type="text" name="name" autocomplete="name" form="contact-whilo" required></input>
           <label>Name</label>
         </fieldset>
         <fieldset class="form-email">
-          <input type="email" name="email" autocomplete="email" form="contact-form" required></input>
+          <input type="email" name="email" autocomplete="email" form="contact-whilo" required></input>
           <label>Email</label>
         </fieldset>
         <fieldset class="form-message">
-          <textarea type="text" name="message" form="contact-form" required></textarea>
+          <textarea type="text" name="message" form="contact-whilo" required></textarea>
           <label>Message</label>
         </fieldset>
-        <input type="hidden" name="url" form="contact-form" value="whilo">
-        <button class="send-message" type="submit" name="submit" form="contact-form" value="Send Form">Send</button>
+        <fieldset class="honeypot-field">
+          <input name="bots-fill-this" form="contact-whilo" />
+          <label>Humans leave blank</label>
+        </fieldset>
+        <input type="hidden" name="url" form="contact-whilo" value="whilo">
+        <button class="send-message" type="submit" name="submit" form="contact-whilo" value="Send Form">Send</button>
       </form>
     </div>
 
