@@ -205,9 +205,32 @@
   <section class="project-content">
     <div class="content-group">
       <h3>Process Overview</h3>
-      <p>The following is some of the assets created over that time. If you'd like to read my complete case-study, see the form below, or email <a href="mailto:jai@gantic.co" target="_blank" class="">jai@gantic.co</a></p>
+      <p>The following is an excerpt of some of the assets created over that time.</p>
     </div>
   </section>
+  <section class="project-content">
+    <div class="content-group accessRequest">
+      <p>If you'd like to read the complete case study, request access here:</p>
+      <form name="request-form" method="post" id="request-form" class="requestForm" netlify-honeypot="bots-fill-this" netlify action="/project/pin/#request-form">
+        <fieldset class="request-name">
+          <input type="text" name="name" autocomplete="name" form="request-form" required />
+          <label>Name</label>
+        </fieldset>
+        <fieldset class="request-email">
+          <input type="email" name="email" autocomplete="email" form="request-form" required />
+          <label>Email</label>
+        </fieldset>
+        <fieldset class="honeypot-field">
+          <input name="bots-fill-this" />
+          <label>Humans leave blank</label>
+        </fieldset>
+        <input type="hidden" name="url" form="request-form" value="pin">
+        <button class="send-request" type="submit" name="submit" form="request-form" value="Send Form">Request the Case Study</button>
+      </form>
+    </div>
+  </section>
+
+
 
   <figure class="project-fig wide-fig no-shadow full-wide">
     <img class="project-img" src="img/pin-nav-structure.png" alt="Exploration of Nav & IA Structure">

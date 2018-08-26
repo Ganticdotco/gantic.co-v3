@@ -1133,6 +1133,10 @@ fieldset, form, label {
   /*top:.1rem;*/
 }
 
+.honeypot-field {
+  visibility: hidden;
+}
+
 .contactForm input,
 .contactForm textarea,
 .projectForm input,
