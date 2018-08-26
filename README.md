@@ -12,8 +12,8 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
   - [x] Project pages initial content
   - [ ] In-depth project content added
   - [ ] Site accessibility audit
-  - [ ] Customise forms on project pages
-  - [ ] Quick navigation between projects
+  - [x] Customise forms on project pages
+  - [x] Quick navigation between projects
   - [ ] Include resume (page w/ print style or PDF?)
 
 ### Styling & responsiveness
@@ -21,7 +21,7 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
   - [x] Homepage responsive styling
   - [x] Project page basic styling
   - [x] Project page responsive styling
-  - [ ] Element spacing in contact footer (mobile)
+  - [x] Element spacing in contact footer (mobile)
   - [ ] Add scroll indicators
   - [ ] Fallback for non CSS-grid browsers
   - [ ] Final polish
@@ -47,14 +47,14 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
 
 ### Implementation
   - [x] Redirect domain DNS
-  - [ ] Check all current subdomains redirect
+  - [x] Check all current subdomains redirect
   - [x] Check all current redirects work
   - [x] Add Google Analytics
 
 
 ### Low-level task-list
  - [ ] Vertical spacing on large screens (Safari only?)
- - [ ] Lightbox items showing behind overlay?
+ - [x] Lightbox items showing behind overlay?
  - [ ] Link style in banner copy
  - [ ] Mask initial CSS loading animation somehow
  - [ ] Add some hierarchy to project tile typography
@@ -63,5 +63,5 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
  - [ ] Fix email and twitter contact hover states
  - [ ] Fix email and twitter contact spacing on mobile
  - [ ] Fix desktop lightbox selected viewed
- - [ ] Add honeypot field to forms to reduce spam
- - [ ] Reversed button styles
+ - [x] Add honeypot field to forms to reduce spam
+ - [x] Reversed button styles
