@@ -24084,7 +24084,7 @@ div.m-loading.embed{
     display:none
 }
 div.m-loading .loading-backdrop{
-    background-color:#252b33;
+    background-color:#eee;
     left:0;
     top:0;
     margin:0;
@@ -24101,7 +24101,7 @@ div.m-loading .loading-backdrop{
 div.m-loading .loading-backdrop h2{
     font-size:25px;
     font-weight:300;
-    color:#fff;
+    color:#333;
     margin:41px 0 11px
 }
 div.m-loading .loading-backdrop p{
