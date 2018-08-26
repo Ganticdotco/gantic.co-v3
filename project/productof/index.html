@@ -108,6 +108,10 @@
           <textarea type="text" name="message" form="contact-form" required></textarea>
           <label>Message</label>
         </fieldset>
+        <fieldset class="honeypot-field">
+          <input name="bots-fill-this" />
+          <label>Humans leave blank</label>
+        </fieldset>
         <input type="hidden" name="url" form="contact-form" value="productof">
         <button class="send-message" type="submit" name="submit" form="contact-form" value="Send Form">Send</button>
       </form>

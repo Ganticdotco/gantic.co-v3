@@ -1135,6 +1135,7 @@ fieldset, form, label {
 
 .honeypot-field {
   visibility: hidden;
+  height: 0;
 }
 
 .contactForm input,
