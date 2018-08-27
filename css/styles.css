@@ -1183,9 +1183,13 @@ fieldset, form, label {
   /*top:.1rem;*/
 }
 
-.honeypot-field {
-  visibility: hidden;
-  height: 0;
+.honeypot-field, .honeypot-field input, .honeypot-field label {
+  /* visibility: hidden; */
+  height: 1px !important;
+  padding: 1px !important;
+  margin: 1px !important;
+  font-size: 1px !important;
+  opacity: 0.1 !important;
 }
 
 .contactForm input,
