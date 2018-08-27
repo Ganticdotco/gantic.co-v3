@@ -491,7 +491,7 @@ section.work, section.words, section.about {
   transition: all .2s ease-in-out;
 }
 
-.work article:hover{
+.work article:hover, .requestFormContainer:hover {
   box-shadow:
     0 1rem 3rem rgba(60, 68, 66, .33),
     0 .25rem 1rem rgba(0, 0, 0, 0.2);
@@ -1183,9 +1183,13 @@ fieldset, form, label {
   /*top:.1rem;*/
 }
 
-.honeypot-field {
-  visibility: hidden;
-  height: 0;
+.honeypot-field, .honeypot-field input, .honeypot-field label {
+  /* visibility: hidden; */
+  height: 1px !important;
+  padding: 1px !important;
+  margin: 1px !important;
+  font-size: 1px !important;
+  opacity: 0.1 !important;
 }
 
 .contactForm input,
@@ -1330,13 +1334,12 @@ fieldset, form, label {
   z-index: 1;
 }
 
-.form-name input {
+.form-name input, .request-name input {
   border-top-left-radius: .2rem;
   border-top-right-radius: .2rem;
-
 }
 
-.form-message textarea {
+.form-message textarea, .request-email input {
   border-bottom-right-radius: .2rem;
   border-bottom-left-radius: .2rem;
 }
