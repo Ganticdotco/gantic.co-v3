@@ -491,7 +491,7 @@ section.work, section.words, section.about {
   transition: all .2s ease-in-out;
 }
 
-.work article:hover{
+.work article:hover, .requestFormContainer:hover {
   box-shadow:
     0 1rem 3rem rgba(60, 68, 66, .33),
     0 .25rem 1rem rgba(0, 0, 0, 0.2);
