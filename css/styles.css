@@ -1330,13 +1330,12 @@ fieldset, form, label {
   z-index: 1;
 }
 
-.form-name input {
+.form-name input, .request-name input {
   border-top-left-radius: .2rem;
   border-top-right-radius: .2rem;
-
 }
 
-.form-message textarea {
+.form-message textarea, .request-email input {
   border-bottom-right-radius: .2rem;
   border-bottom-left-radius: .2rem;
 }
