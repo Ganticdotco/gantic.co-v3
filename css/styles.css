@@ -204,7 +204,9 @@ article .read a {
   font-size: 1.3333rem;
   opacity: 0;
   visibility: hidden;
-  transition: all .4s ease-in-out;
+  transition:
+    color .4s ease-in-out,
+    opacity .4s ease-in-out;
 }
 
 .nav-active .logo a, .project .transparent .logo a {
@@ -216,6 +218,9 @@ article .read a {
 
 .nav-active .logo a span {
   color: #359ca0;
+  transition:
+    color .4s ease-in-out,
+    opacity .4s ease-in-out;
 }
 
 .nav-active .logo a:hover span {
