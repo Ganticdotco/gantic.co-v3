@@ -11,7 +11,7 @@ https://gantic.netlify.com/* https://www.gantic.co/:splat 301!
 /whilo /project/whilo
 
 # Redirect homepage sections as anchor tags
-/work /index.html#work
-/words /index.html#words
-/about /index.html#about
-/contact /index.html#contact
+/work /#work
+/words /#words
+/about /#about
+/contact /#contact
