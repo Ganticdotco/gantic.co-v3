@@ -111,7 +111,7 @@ article h1 {
   font-size: 2rem;
 }
 
-article header p, .project-details p {
+article header p, .project-details header p {
   font-weight: 700;
   margin-top: .2rem;
   margin-bottom: 1rem;
