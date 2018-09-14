@@ -111,7 +111,7 @@ article h1 {
   font-size: 2rem;
 }
 
-article header p, .project-details p {
+article header p, .project-details header p {
   font-weight: 700;
   margin-top: .2rem;
   margin-bottom: 1rem;
@@ -204,7 +204,9 @@ article .read a {
   font-size: 1.3333rem;
   opacity: 0;
   visibility: hidden;
-  transition: all .4s ease-in-out;
+  transition:
+    color .4s ease-in-out,
+    opacity .4s ease-in-out;
 }
 
 .nav-active .logo a, .project .transparent .logo a {
@@ -216,6 +218,9 @@ article .read a {
 
 .nav-active .logo a span {
   color: #359ca0;
+  transition:
+    color .4s ease-in-out,
+    opacity .4s ease-in-out;
 }
 
 .nav-active .logo a:hover span {
@@ -253,7 +258,7 @@ body:not(.nav-active) .reversed .logo a:hover span {
   font-family: "T";
   font-weight: 800;
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.5;
   text-shadow: 0 .125rem .5rem rgba(0, 0, 0, 0.32);
   color: #91d9d9;
 }
@@ -351,6 +356,16 @@ body:not(.nav-active) .reversed .logo a:hover span {
 .main-nav li a {
   color: #444947;
   text-decoration: none;
+}
+
+.speakDontShow {
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
 }
 
 #menu-toggle {
@@ -1691,7 +1706,6 @@ footer {
   .home .hero-content p, .home .hero-content p a {
     font-size: 1.5rem;
     max-width: 24em;
-    line-height: 1.75;
     text-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.32);
   }
 
