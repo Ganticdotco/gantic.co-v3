@@ -1728,7 +1728,7 @@ footer {
   }
 
   .work {
-    row-gap: 4rem;
+    grid-row-gap: 4rem;
     grid-template-columns: repeat(12, 1fr);
   }
 

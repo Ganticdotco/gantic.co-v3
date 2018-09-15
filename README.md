@@ -53,7 +53,7 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
 
 
 ### Low-level task-list
- - [ ] Vertical spacing on large screens (Safari only?)
+ - [x] Vertical spacing on large screens (Safari only~~?~~)
  - [x] Lightbox items showing behind overlay?
  - [ ] Link style in banner copy
  - [ ] Mask initial CSS loading animation somehow
