@@ -263,6 +263,15 @@ body:not(.nav-active) .reversed .logo a:hover span {
   color: #91d9d9;
 }
 
+.home .hero-content p a {
+  border-bottom: .1111rem solid rgba(40, 197, 184, .5);
+}
+
+.home .hero-content p a:hover {
+  border-bottom: .1111rem solid rgba(40, 197, 184, 1);
+}
+
+
 .home .hero-content h1 span, .home .hero-content p span {
   color: white;
 }
