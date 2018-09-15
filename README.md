@@ -40,7 +40,7 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
 
 ### Page performance
   - [ ] Follow Google page speed performance improvements
-  - [ ] Compress & optimise image assets
+  - [x] Compress & optimise image assets
   - [ ] Implement responsive images
   - [ ] ~~Break out critical CSS for preload~~ Failed.
   - [ ] Cross browser/platform testing
