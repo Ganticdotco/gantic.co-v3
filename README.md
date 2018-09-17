@@ -40,7 +40,7 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
 
 ### Page performance
   - [ ] Follow Google page speed performance improvements
-  - [ ] Compress & optimise image assets
+  - [x] Compress & optimise image assets
   - [ ] Implement responsive images
   - [ ] ~~Break out critical CSS for preload~~ Failed.
   - [ ] Cross browser/platform testing
@@ -53,9 +53,9 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
 
 
 ### Low-level task-list
- - [ ] Vertical spacing on large screens (Safari only?)
+ - [x] Vertical spacing on large screens (Safari only~~?~~)
  - [x] Lightbox items showing behind overlay?
- - [ ] Link style in banner copy
+ - [x] Link style in banner copy
  - [ ] Mask initial CSS loading animation somehow
  - [x] Add some hierarchy to project tile typography
  - [ ] Fix Product Of preview thumb spacing

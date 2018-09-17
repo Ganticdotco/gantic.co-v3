@@ -6,12 +6,18 @@ https://gantic.netlify.com/* https://www.gantic.co/:splat 301!
 
 # Redirect to project shortnames
 /pin /project/pin
+/pin/casestudy /project/pin/casestudy
+/casestudy/pin /project/pin/casestudy
+/work/pin /project/pin/casestudy
 /productof /project/productof
+/work/productof /project/productof
 /travello /project/travello
+/work/travello /project/travello
 /whilo /project/whilo
+/work/whilo /project/whilo
 
 # Redirect homepage sections as anchor tags
-/work /index.html#work
-/words /index.html#words
-/about /index.html#about
-/contact /index.html#contact
+/work /#work
+/words /#words
+/about /#about
+/contact /#contact
