@@ -1,8 +1,8 @@
 # gantic.co v3
 
-My existing website is built on top of a bulky Wordpress theme, and hosted in Australia.
+My previous website was built on a bulky Wordpress theme, and hosted in Australia.
 
-This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, with the goal of a faster loading, and nicer feeling website no matter where it's viewed from.
+This is my attempt at quickly rebuilding it by hand, and hosting it on Netlify, with the goal of a faster loading and having a nicer feeling website no matter where it's viewed from.
 
 ## To-dos
 ### Structure & content:
@@ -10,7 +10,7 @@ This is an attempt at quickly rebuilding it by hand, to be hosted on Netlify, wi
   - [x] Homepage content
   - [x] Project pages structure
   - [x] Project pages initial content
-  - [ ] In-depth project content added
+  - [x] ~~In-depth project content added~~ (*Published elsewhere*)
   - [ ] Site accessibility audit
   - [x] Customise forms on project pages
   - [x] Quick navigation between projects
