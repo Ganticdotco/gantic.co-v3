@@ -557,6 +557,12 @@ section.work, section.words, section.about {
   padding: 1rem;
 }
 
+section.project-content.proto-frames {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
 .hero + .project-content {
   padding-top: 0;
 }
@@ -865,12 +871,12 @@ figcaption {
 
 .invision-proto {
   position: relative;
-  margin: 2rem auto;
+  margin: 0 auto;
   text-align: center;
 }
 
 .invision-proto iframe {
-  margin: 0 auto;
+  margin: 4rem auto 0;
   display: none;
 }
 
