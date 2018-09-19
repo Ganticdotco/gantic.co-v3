@@ -156,6 +156,11 @@ article p, .project .hero-content p {
   margin-top: 1rem;
 }
 
+.project-details .view a {
+    width: 100%;
+    text-align: center;
+}
+
 .view.inversed a {
   color: white;
   background-color: #008080;
@@ -1710,6 +1715,10 @@ footer {
   .view.inversed a {
     max-width: 20rem;
     margin-top: 1rem;
+  }
+
+  .project-details .view a {
+      width: auto;
   }
 
 
