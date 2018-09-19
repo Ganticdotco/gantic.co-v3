@@ -159,6 +159,13 @@ article p, .project .hero-content p {
 .view.inversed a {
   color: white;
   background-color: #008080;
+  width: 100%;
+  margin-top: 0;
+}
+
+.view.inversed {
+    position: relative;
+    width: 100%;
 }
 
 .view a:last-of-type {
@@ -873,6 +880,7 @@ figcaption {
   position: relative;
   margin: 0 auto;
   text-align: center;
+  flex-grow: 1;
 }
 
 .invision-proto iframe {
@@ -1698,6 +1706,12 @@ footer {
   .invision-proto iframe, .invision-proto figcaption {
     display: block;
   }
+
+  .view.inversed a {
+    max-width: 20rem;
+    margin-top: 1rem;
+  }
+
 
 }
 
