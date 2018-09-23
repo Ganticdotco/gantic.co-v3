@@ -7,26 +7,26 @@
 html {
   font-size: 112.5%;
   -webkit-font-smoothing: antialiased;
-  background-color: #005e5f;
   font-family: "N", san-serif;
   font-style: normal;
   line-height: 1.5;
+}
+
+html.home {
+  background-color: #005e5f;
+  background: rgb(0,94,95);
+  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%), #005e5f;
 }
 
 body {
   padding: 0;
   margin: 0;
   color: #282b2a;
-  background-color: #005e5f;
   scroll-behavior: smooth;
 }
 
-html.project {
-  background: rgb(0,94,95);
-  background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%), #005e5f;
-}
-
-.project body {
+.home body {
+  background-color: #005e5f;
   background: rgb(0,94,95);
   background: linear-gradient(0deg, rgba(0,94,95,1) 1%, rgba(255,255,255,1) 2%), #005e5f;
 }
@@ -265,18 +265,25 @@ body:not(.nav-active) .reversed .logo a:hover span {
 }
 
 
-.home .hero-content h1 {
+.home .hero-content h1, .cv .hero-content h1 {
   font-size: 2.5rem;
-  text-shadow: 0 .25rem 1rem rgba(0, 0, 0, 0.2);
-  color: #8bdacc;
   margin-bottom: 1rem;
 }
 
-.home .hero-content p, .home .hero-content p a {
+.home .hero-content h1 {
+  text-shadow: 0 .25rem 1rem rgba(0, 0, 0, 0.2);
+  color: #8bdacc;
+}
+
+.home .hero-content p, .home .hero-content p a,
+.cv .hero-content p, .cv .hero-content p a {
   font-family: "T";
   font-weight: 800;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.home .hero-content p, .home .hero-content p a {
   text-shadow: 0 .125rem .5rem rgba(0, 0, 0, 0.32);
   color: #91d9d9;
 }
@@ -469,7 +476,7 @@ article:first-of-type {
   margin-top:1rem;
 }
 
-.home .hero, .contact{
+.home .hero, .cv .hero, .contact{
   min-height: 100vh;
   left: 0;
   top: 0;
@@ -477,7 +484,7 @@ article:first-of-type {
   padding: 1rem;
 }
 
-.home .hero {
+.home .hero, .cv .hero {
   min-height: 100vh;
   left: 0;
   top: 0;
@@ -506,7 +513,7 @@ section.work, section.words, section.about {
   color: white;
 }
 
-.home .hero-content {
+.home .hero-content, .cv .hero-content {
   grid-row: 2;
 }
 
@@ -1474,12 +1481,12 @@ footer {
     overflow: auto;
   }
 
-  .home .hero{
+  .home .hero, .cv .hero {
     grid-template-columns: 1fr 5fr 1fr;
     grid-gap: 1rem;
   }
 
-  .home .hero-content {
+  .home .hero-content, .cv .hero-content {
     grid-column: 2;
   }
 
@@ -1732,24 +1739,31 @@ footer {
     padding: 0;
   }
 
-  .home .hero {
+  .home .hero, .cv .hero {
     grid-template-columns: 1fr 10fr 1fr;
     grid-gap: 1rem;
   }
 
-  .home .hero-content {
+  .home .hero-content, .cv .hero-content {
     grid-row: 2;
     grid-column: 2;
   }
 
-  .home .hero-content h1 {
+  .home .hero-content h1, .cv .hero-content h1 {
     font-size: 4rem;
+  }
+
+  .home .hero-content h1 {
     text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
   }
 
-  .home .hero-content p, .home .hero-content p a {
+  .home .hero-content p, .home .hero-content p a,
+  .cv .hero-content p, .cv .hero-content p a  {
     font-size: 1.5rem;
     max-width: 24em;
+  }
+
+  .home .hero-content p, .home .hero-content p a {
     text-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.32);
   }
 
@@ -2002,7 +2016,7 @@ footer {
     grid-column: 4 / span 6;
   }
 
-  .home .hero, .words, .about, .contact {
+  .home .hero, .cv .hero .words, .about, .contact {
     grid-template-columns: 2fr 8fr 2fr;
   }
 
@@ -2050,7 +2064,7 @@ footer {
 
 /* ~1024px */
 @media screen and (min-width: 64em){
-  .home .hero {
+  .home .hero, .cv .hero {
     grid-template-rows: 1fr auto 1fr;
     grid-gap: 1rem;
   }
@@ -2126,7 +2140,7 @@ footer {
     padding-right: calc((100vw - 65rem) / 2 );
   }
 
-  .home .hero, .words, .about, .contact {
+  .home .hero, .cv .hero .words, .about, .contact {
     grid-template-columns: 3fr 6fr 3fr;
   }
 
